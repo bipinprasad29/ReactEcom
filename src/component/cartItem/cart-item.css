@@ -1,0 +1,30 @@
+.cartItem{
+        width: calc( 100vw - 30vw );
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(124, 138, 189);
+        margin: 20px 0 0 0
+      }
+
+.cartItem img{
+    height: 130px;
+    width: 80px;
+    object-fit: cover;
+}
+.total{
+    width: calc( 100vw - 30vw );
+    background-color: rgb(173, 173, 247);
+    text-align: center;
+}
+.removebtn{
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #fc0730;
+  color: #fff;
+  cursor: pointer;
+}
+
+.removebtn:hover{
+    background-color: grey;
+}

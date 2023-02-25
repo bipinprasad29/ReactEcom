@@ -1,0 +1,25 @@
+.pagination{
+ width: calc( 100vw - 30vw);
+ display: flex; 
+ justify-content: center;
+ align-items: center;
+ margin: 20px auto;
+}
+
+.page{
+     width: 40px;
+     border: 1px solid black;
+     text-align: center;
+     margin: 0 2px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.2s ease-in-out;
+    }
+
+  .page:hover{
+    border: 1px solid teal;
+  }  
+
+  .selectedPage{
+    background-color: rgb(185, 184, 184);
+  }

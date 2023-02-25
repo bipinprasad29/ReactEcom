@@ -1,0 +1,45 @@
+.filter {
+  width: 200px;
+  height: auto;
+  max-height: 80vh;
+  margin: 20px 0 0 40px;
+  background-color: beige;
+  padding: 5px;
+}
+.filterItem{
+  display: flex;
+  flex-direction: column;
+}
+
+.filter h1 {
+  font-size: 1.25rem;
+  background-color: beige;
+  padding: 0 6px !important;
+  margin: 0 !important;
+}
+
+.category{
+  width: 100%;
+}
+.btncontainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttn {
+  width: auto;
+  height: 40px;
+  margin: 10px auto;
+  text-align: 'center';
+  cursor: pointer;
+}
+
+.radioButton{
+  display: flex;
+   justify-content:space-between; 
+   padding: 0px 10px;
+}
+
