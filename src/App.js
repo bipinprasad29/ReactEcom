@@ -1,11 +1,12 @@
 import "./App.css";
-
-import Cart from "./component/cartItem/cartItem";
-import Product from "./component/singleproduct/singleproduct";
+import { lazy, Suspense } from "react";
 import Header from "./component/navbar/navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./component/home/home";
 import Error from "./component/Error";
+const Home =lazy(()=>import ("./component/home/home"))
+const Cart =lazy(()=>import ("./component/cartItem/cartItem"))
+const Product =lazy(()=>import ("./component/singleproduct/singleproduct"))
+
 
 function App() {
   return (
@@ -15,12 +16,16 @@ function App() {
         <div className="maindisplay">
         
           <div>
-            <Routes>
-              <Route exact path={"/"} element={<Home />} />
+          <Suspense fallback='Loading...'>
+           <Routes>
+          
+             <Route exact path={"/"} element={<Home />} />
               <Route exact path="/cart" element={<Cart />} />
               <Route exact path="/product" element={<Product />} />
               <Route path="*" element={<Error />} />
             </Routes>
+            </Suspense>
+          
           </div>
         </div>
       </BrowserRouter>
